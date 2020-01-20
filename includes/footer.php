@@ -1,4 +1,4 @@
-<div id="mainContentContainer">
+
             </div>
         </div>
     </div>
