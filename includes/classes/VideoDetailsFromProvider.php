@@ -12,7 +12,7 @@ class VideoDetailsFromProvider{
                     $fileInput
                     $titleInput
                     $descriptionInput
-                    $privacyInput
+                    $privacyInput  
                 </form>";
     }
 
