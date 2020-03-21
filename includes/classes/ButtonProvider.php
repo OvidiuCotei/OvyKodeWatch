@@ -59,7 +59,7 @@ class ButtonProvider{
         $buttonText = $isSubscribedTo ? "SUBSCRIBED" : "SUBSCRIBE";
         $buttonText .= " " .$userToObj->getSubscriberCount();
 
-        $buttonClass = $isSubscribedTo ? "unsubscibe button" : "subscribe button";
+        $buttonClass = $isSubscribedTo ? "unsubscribe button" : "subscribe button";
         $action = "subscribe(\"$userTo\", \"$userloggedIn\", this)";
 
         $button = ButtonProvider::createButton($buttonText, null, $action, $buttonClass);
