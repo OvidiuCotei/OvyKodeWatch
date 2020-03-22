@@ -68,10 +68,10 @@ class ButtonProvider{
         </div>";
     }
 
-    public static function createUserProfileNavigationButton($con, $username){
+    public static function createUserProfileNavigationButton($con, $user){
         if(User::isLoggedIn())
         {
-            return ButtonProvider::createUserProfileButton($con, $username);
+            return ButtonProvider::createUserProfileButton($con, $user->getUsername());
         }
         else
         {

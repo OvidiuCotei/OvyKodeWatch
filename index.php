@@ -1,10 +1,13 @@
 <?php require_once("includes/header.php"); ?>
 <div class="videoSection">
     <?php
-    $subscriptionsProvider = new SubscriptionsProvider($con, $userLoggedInObj);
-    $subscriptionVideos = $subscriptionsProvider->getVideos();
 
-    $videoGrid = new VideoGrid($con, $userLoggedInObj->getUsername());
+    if (User::isLoggedIn()) {
+        $subscriptionsProvider = new SubscriptionsProvider($con, $userLoggedInObj);
+        $subscriptionVideos = $subscriptionsProvider->getVideos();
+    }
+
+    $videoGrid = new VideoGrid($con, $userLoggedInObj);
 
     if(User::isLoggedIn() && sizeof($subscriptionVideos) > 0)
     {
