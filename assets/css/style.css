@@ -621,6 +621,7 @@ a:hover{
 
 .videoGrid.large .videoGridItem .details{
     max-width: 600px;
+    flex: 1;
 }
 
 .videoGrid.large .videoGridItem .details .title{
@@ -672,4 +673,44 @@ a:hover{
 .signInLink{
     color: #e8b923;
     margin-left: 15px;
+}
+
+#sideNavContainer .navigationItems{
+    overflow-y: auto;
+}
+
+#sideNavContainer .navigationItem{
+    height: 40px;
+    display: flex;
+}
+
+#sideNavContainer .navigationItem img{
+    height: 18px;
+    margin-right: 27px;
+}
+
+#sideNavContainer .navigationItem span{
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+}
+
+#sideNavContainer .navigationItem a{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#sideNavContainer .navigationItem a:hover{
+    background-color: #71037E;
+}
+
+#sideNavContainer .heading{
+    color: #e8b923;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 24px 0;
+    border-top: 2px solid #71037E;
+    display: block;
 }
