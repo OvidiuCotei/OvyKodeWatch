@@ -7,7 +7,7 @@ require_once("includes/classes/VideoGrid.php");
 require_once("includes/classes/VideoGridItem.php");
 require_once("includes/classes/SubscriptionsProvider.php");
 
-$usernameLoggedIn = isset($_SESSION["userLoggedIn"]) ? $_SESSION["userLoggedIn"] : "";
+$usernameLoggedIn = User::isLoggedIn() ? $_SESSION["userLoggedIn"] : "";
 $userLoggedInObj = new User($con, $usernameLoggedIn); 
 ?>
 <!DOCTYPE html>
@@ -51,9 +51,9 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
                     <img class="upload" src="assets/images/icons/upload.png" alt="Upload">
                 </a>
 
-                <a href="#">
-                    <img class="upload" src="assets/images/profilePictures/default.png" alt="Upload">
-                </a>
+                <?php
+                echo ButtonProvider::createUserProfileNavigationButton($con, $userLoggedInObj->getUsername());
+                ?>
             </div>
         </div>
 

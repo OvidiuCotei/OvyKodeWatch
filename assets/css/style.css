@@ -643,3 +643,33 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+
+.videoGridHeader .right{
+    text-align: right;
+}
+
+.videoGridHeader a{
+    color: #e8b923;
+}
+
+.videoGridHeader a:hover{
+    color: #71037E;
+}
+
+.videoGridHeader a:after{
+    content: ' | ';
+    color: #e8b923;
+}
+
+.videoGridHeader a:last-child:after{
+    content: '';
+}
+
+.videoGridHeader .left{
+    color: #e8b923;;
+}
+
+.signInLink{
+    color: #71037E;
+    margin-left: 15px;
+}
