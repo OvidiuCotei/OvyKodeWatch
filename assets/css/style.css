@@ -714,3 +714,123 @@ a:hover{
     border-top: 2px solid #71037E;
     display: block;
 }
+
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.coverPhotoContainer{
+    height: 200px;
+    flex: 1;
+    position: relative;
+}
+
+.coverPhotoContainer .coverPhoto{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.coverPhotoContainer .channelName{
+    position: absolute;
+    top: calc(50% - 40px);
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 5px;
+}
+
+.profileHeader{
+    padding: 15px 100px 0 100px;
+    display: flex;
+    height: 100px;
+}
+
+.userInfoContainer{
+    flex: 1;
+    display: flex;
+}
+
+.profileHeader .userInfoContainer .profileImage{
+    height: 80px;
+    width: 80px;
+}
+
+.profileHeader .userInfo{
+    float: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileHeader .userInfo .title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.profileHeader .userInfo .subscriberCount{
+    font-size: 14px;
+    color: #e8b923;
+}
+
+.profileHeader .buttonContainer{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profileHeader .buttonContainer .buttonItem{
+    align-items: center;
+    display: flex;
+}
+
+.profileHeader .buttonContainer .buttonItem button{
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #71037E;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #71037E;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.profileContainer .channelContent{
+    padding: 20px;
+    background-color: #333333;
+}
+
+.nav-item a{
+    color: #e8b923;
+}
+
+.channelContent .section .values {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.formSection:not(:last-child){
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #71037E;
+}
+
+.settingsContainer form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

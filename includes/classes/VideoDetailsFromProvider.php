@@ -56,7 +56,7 @@ class VideoDetailsFromProvider{
                         <option value='0'>Private</option>
                         <option value='1'>Public</option>
                     </select>
-                 </div>";
+                </div>";
     }
 
     private function createCategoriesInput()
